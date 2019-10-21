@@ -17,7 +17,7 @@ class UI{
         this.desc.textContent = weather.weather[0].description;
         this.dewpoint.textContent = `Atmospheric pressure: ${weather.main.pressure} hPa`;
         this.humidity.textContent = `Relative humidity: ${weather.main.humidity}%`;
-        this.icons.setAttribute('src', `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`)
+        this.icons.setAttribute('src', `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`)
         this.wind.textContent = `Wind: ${weather.wind.speed} m/s`
         this.feellike.textContent = `Visibility: ${weather.visibility} m`
     }
